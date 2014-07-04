@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="css/zeneke.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/promoantares.css" />
 	<title>Promoantares</title>
 	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script src="js/angular.min.js"></script>
@@ -9,46 +10,46 @@
 	<script src="js/app.js"></script>
 </head>
 <body ng-app="App">
-	<div id="wrapper">
-		<div id="header">
-			<hgroup>
-				<h1> <img src="img/promo_img.png"> Promoantares  </h1>
 
+	<div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a ui-sref="home">Home</a></li>
+          
+          <li><a href="mailto:info@promoantares.com">Contacto</a></li>
+        </ul>
+        <h1> <img src="img/promo_img.png"> Promoantares</h1>
+        <img style="width:100%" src="img/2.jpg" />
+      </div>
 
-			</hgroup>
-		</div>
+      <div class="jumbotron">        
+        <p class="lead">Venta de cementos al pormayor.</p>
+        <p><a class="btn btn-lg btn-success" href="mailto:info@promoantares.com" role="button">Contacto</a></p>
+      </div>
 
-		<div id="navigation_top">
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Producto</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-			<ul>
-			    <li><a ui-sref="home">Home</a></li>
-			    <li><a ui-sref="articulo-rpi">Raspberry</a></li>
-			    <li><a ui-sref="articulo-cerdigres">Cerdigres</a></li>
-			    <li><a ui-sref="articulo-agricola">Agricola Points</a></li>
-			    <li><a ui-sref="articulo-amigo">Amigo Invisible</a></li>
-			</ul>
-	    </div>
-	    <img style="width:100%" src="img/2.jpg" />
+          <h4>Consultas</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
-	    <div>
-	    	<div ui-view></div>
-	    </div>
-	    
-		
-		<div id="footer">
-		<p>&#169; 2014&#8211; <a href="#">Zeneke</a></p>
-		<p>
-			<a href="http://validator.w3.org/check?uri=http%3A%2F%2Fwww.zeneke.com%2F">
-			    <img style="border:0;width:88px;height:31px"
-			        src="http://www.w3.org/Icons/valid-html401-blue"
-			        alt="¡HTML4 Válido!" />
-			</a>
-			<a href="http://jigsaw.w3.org/css-validator/validator?uri=zeneke.com&profile=css3&usermedium=all&warning=1&vextwarning=">
-			    <img style="border:0;width:88px;height:31px"
-			        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-			        alt="¡CSS Válido!" />
-			</a>
-		</p>
-		</div>
-	</div>
+          
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Producto</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Consultas</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Promoantares 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+	
 </body>
